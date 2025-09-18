@@ -104,3 +104,31 @@ git push origin develop-Angely
 | Ashlee Maldonado | Full Stack   | - Creación de pantallas y componentes reutilizables.<br>- Apoyo en la lógica interna del sistema.<br>- Elaboración de la documentación del proyecto.              | 
 | Angely Corahua   | Full Stack   | - Diseño visual y organización de interfaces.<br>- Manejo de datos mostrados al usuario.<br>- Revisión y validación de formularios.                               |  
 | Bruno Guerra     | Full Stack   | - Desarrollo de reglas y procesos internos del sistema.<br>- Configuración de seguridad y accesos.<br>- Administración del repositorio y despliegue del proyecto. |  
+
+## 🌱 Flujo de trabajo con Git
+
+### 1. Ramas utilizadas
+- **main** → Rama estable, lista para producción.  
+- **develop-nombre** → Rama de desarrollo.  
+- **feature/nombre** → Nuevas funcionalidades.  
+- **fix/nombre** → Correcciones de errores.  
+
+#### Ejemplo
+```bash
+git checkout -b feature/catalogo-productos
+```
+<img width="955" height="222" alt="image" src="https://github.com/user-attachments/assets/b3b1e97e-16f9-467f-be56-d70f5e9a3124" />
+
+#### Ejemplo 
+```bash
+git checkout -b fix/
+```
+
+### **2. Commits**
+- Commits atómicos y descriptivos.
+```bash
+git commit -m "feat: crear componente Login en React"
+git commit -m "fix: corregir validación de credenciales en formulario de login"
+```
+
+
