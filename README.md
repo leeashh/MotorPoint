@@ -45,57 +45,58 @@ El sistema considera dos roles principales:
 A continuación se muestran los pasos para instalar y ejecutar el proyecto de forma local, con las mismas acciones realizadas durante las pruebas. .  
 
 ### **1. Requisitos Previos**
-- Git (clonar el repositorio).
-- Java 17+.
-- Maven (o usar el wrapper ./mvnw incluido).
-- Node.js 16+ y npm.
-- MySQL funcionando localmente.
-- (Opcional) Postman o curl para probar APIs.
+Antes de iniciar, asegúrate de tener instalado:
+- Git → para clonar el repositorio.
+- Java 17+ y Maven → para el backend (Spring Boot).
+- Node.js 16+ y npm → para el frontend (React).
+- MySQL Server funcionando en tu máquina.
+- Opcional el Postman para probar APIs.
   
 ### **2. Inicializar Git en el equipo**
-Lo primero es preparar la carpeta para trabajar con Git, usando:
+En la carpeta destinada al proyecto, se preparó el entorno de Git ejecutando:
 ```bash
 git init
 ```
 <img width="597" height="95" alt="image" src="https://github.com/user-attachments/assets/bbb82e4a-d228-401a-afb7-0d6acb79a8fd" />
 
 ### **3. Clonar el repositorio**
-Luego descargamos el proyecto desde GitHub dentro de la carpeta inicializada, usando:
+Luego, se descargó el proyecto desde GitHub dentro de la carpeta inicializada:
 ```bash
 git clone https://github.com/usuario/motorpoint.git
 cd motorpoint
 ```
 <img width="771" height="260" alt="image" src="https://github.com/user-attachments/assets/90d4a4a3-17e0-4a28-98e3-d54818361464" />
 
-### **4. Crear y moverse a la rama de trabajo**
-Cada integrante trabajó en su propia rama de desarrollo, ejemplo:
+### **4. Configuración del Backend**
+- Crear una base de datos en MySQL, por ejemplo:
 ```bash
-git checkout -b develop-Angely
+CREATE DATABASE motorpoint_db;
 ```
-<img width="801" height="139" alt="image" src="https://github.com/user-attachments/assets/e74c92c4-254e-4443-8fb4-d1799cdcb8ba" />
 
-### **5. Hacer cambios y guardar (commit)**
-Una vez que cada integrante avanzaba en sus tareas, los cambios se guardaban con:
+- Editar el archivo `backend/src/main/resources/application.properties` con tus credenciales:
 ```bash
-git add .
-git commit -m "Descripción breve de los cambios realizados"
+spring.datasource.url=jdbc:mysql://localhost:8080/motorpoint_db
+spring.datasource.username=tu_usuario
+spring.datasource.password=tu_password
 ```
-<img width="1280" height="667" alt="image" src="https://github.com/user-attachments/assets/7e59ef9b-ff8f-4946-b16a-1400c795c0b4" />
 
-### **6. Creación de ramas adicionales para correcciones**
-En algunos casos fue necesario crear ramas específicas para solucionar errores puntuales, por ejemplo:
+- Iniciar el backend: 
 ```bash
-git checkout -b fix/frontend-login
-```
-<img width="1175" height="158" alt="image" src="https://github.com/user-attachments/assets/e3d681c4-9d71-484b-ba30-32befcca37eb" />
+   cd backend
+   mvn spring-boot:run
+ ```
 
-### **7. Subir los cambios a GitHub**
-Una vez confirmados los cambios en la rama, se subieron al repositorio remoto con:
+### **5. Configuración del Frontend**
+- Instalar dependencias:
 ```bash
-git push origin develop-Angely
+cd frontend
+npm install
 ```
-<img width="541" height="128" alt="image" src="https://github.com/user-attachments/assets/1ee73570-a514-4d77-a06a-8b7823b03dcf" />
 
+- Iniciar el frontend:
+```bash
+npm start
+```
 
 ---
 ## 📋 Roles
@@ -105,9 +106,10 @@ git push origin develop-Angely
 | Angely Corahua   | Full Stack   | - Diseño visual y organización de interfaces.<br>- Manejo de datos mostrados al usuario.<br>- Revisión y validación de formularios.                               |  
 | Bruno Guerra     | Full Stack   | - Desarrollo de reglas y procesos internos del sistema.<br>- Configuración de seguridad y accesos.<br>- Administración del repositorio y despliegue del proyecto. |  
 
+---
 ## 🌱 Flujo de trabajo con Git
 
-### 1. Ramas utilizadas
+### **1. Ramas utilizadas**
 - **main** → Rama estable, lista para producción.  
 - **develop-nombre** → Rama de desarrollo.  
 - **feature/nombre** → Nuevas funcionalidades.  
@@ -133,7 +135,7 @@ git commit -m "feat: crear componente Login en React"
 git commit -m "fix: resolver conflicto en README.md"
 ```
 
-### 3. Uso de comandos Git
+### **3. Uso de comandos Git**
 
 Durante el desarrollo del **login** se documentaron los siguientes comandos:
 
@@ -155,7 +157,7 @@ git switch develop
 ```
 📌 Por qué: Al pasar del desarrollo de la nueva feature login hacia la rama de integración develop.
 
-### 4. Pull Request (PR) / Merge Request (MR)
+### **4. Pull Request (PR) / Merge Request (MR)**
 
 - Se generó una Pull Request desde **fix/readme-conflict** hacia **main**.
 
@@ -169,7 +171,7 @@ git switch develop
 
 <img width="1286" height="741" alt="image" src="https://github.com/user-attachments/assets/0431419e-71aa-444d-9cae-c37e5433bc51" />
 
-### 5. Resolución de Conflictos Ejemplo:
+### **5. Resolución de Conflictos Ejemplo:**
 
 Al intentar actualizar la rama **main** con los cambios remotos, se generó un conflicto en el archivo:
 
@@ -193,7 +195,7 @@ El objetivo principal es ofrecer un catálogo digital de productos, organizado y
 
 El sistema considera dos roles principales: **Usuario** y **Administrador** 🚀
 ```
-### 6. Historial de commits (puntos de control)
+### **6. Historial de commits (puntos de control)**
 ### Ejemplo de salida:
 ```bash
 git log
@@ -203,7 +205,7 @@ git log
 
 <img width="1304" height="953" alt="image" src="https://github.com/user-attachments/assets/e57c23d2-9f6e-44e4-8c8d-eecafdb33e61" />
 
-### 7. Historial de cabeceras
+### **7. Historial de cabeceras**
 ```bash
 git reflog
 ```
