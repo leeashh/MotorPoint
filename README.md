@@ -131,7 +131,7 @@ git checkout -b fix/readme-conflict
 ### **2. Commits**
 - Commits atómicos y descriptivos.
 ```bash
-git commit -m "feat: crear componente Login en React"
+git commit -m "feat: crear página Login en React"
 git commit -m "fix: resolver conflicto en README.md"
 ```
 
@@ -143,9 +143,9 @@ Durante el desarrollo del **login** se documentaron los siguientes comandos:
 
 🔄 **Restaurar archivos**
 ```bash
-git restore src/components/Login.jsx
+git restore src/pages/Login.jsx
 ```
-📌 Por qué: Cuando se modificó accidentalmente el componente Login.jsx y fue necesario volver al estado previo sin perder el resto de los cambios.
+📌 Por qué: Cuando se modificó accidentalmente la página Login.jsx y fue necesario volver al estado previo sin perder el resto de los cambios.
 
 ⏪ **Resetear cambios**
 ```bash
