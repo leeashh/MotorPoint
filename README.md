@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# MotorPoint - Sistema de Repuestos y Accesorios para Autos y Motos 
-=======
-# 🚗🏍️🔧 MotorPoint - Aplicativo web de Repuestos y Accesorios para Autos y Motos
->>>>>>> 20ccc2372717e232197f363f9b32db506828e0f1
+
 ## 📖 Descripción del Proyecto
 **Descripción General**  
 MotorPoint es una aplicación web diseñada para facilitar el acceso a repuestos y accesorios de **autos y motos**.  
@@ -23,42 +19,11 @@ El sistema considera dos roles principales:
 - Administración de usuarios registrados.  
 - Revisión de solicitudes de cotización generadas por los clientes.  
 - Generación de reportes básicos sobre el uso del sistema.
-<<<<<<< HEAD
-  
-## 💻Tecnologías Utilizadas
-- **Backend:** Spring Boot 
-- **Frontend:** React 
-=======
 
----
-## 💻Tecnologías Utilizadas
-- **Backend:**
-  * Spring Boot
-  * Maven:
-     * Spring Web → Para construir APIs REST
-     * Spring Security → Para autenticación y autorización
-     * Spring Data JPA → Para acceso a base de datos con Hibernate
-     * MySQL Driver → Para conectarse a la base de datos MySQL
-     * Validation → Para validar datos de entrada
-     * Spring Boot DevTools → Para recarga automática en desarrollo
-     * Lombok → Para evitar escribir código repetitivo
-- **Frontend:**
-   * React
-   * Bootstrap 
->>>>>>> 20ccc2372717e232197f363f9b32db506828e0f1
 - **Base de datos:** MySQL  
 - **Seguridad:** Spring Security + JWT (roles y autenticación)  
 - **Estilos:** Bootstrap 
 - **Control de versiones:** Git + GitHub
-<<<<<<< HEAD
-  
-## 📋 Roles
-| Nombre           | Rol          | Funciones                                              |  
-|------------------|--------------|--------------------------------------------------------|  
-| Ashlee Maldonado | Full Stack   |             |  
-| Angely Corahua   | Full Stack   |          |  
-| Bruno Guerra     | Full Stack   |    |  
-=======
 
 ---
 ## 🔌Instalación y Ejecución
@@ -151,5 +116,3 @@ git commit -m "feat: crear componente Login en React"
 git commit -m "fix: corregir validación de credenciales en formulario de login"
 ```
 
-
->>>>>>> 20ccc2372717e232197f363f9b32db506828e0f1
