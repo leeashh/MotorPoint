@@ -1,4 +1,4 @@
-# 🚗🏍️🔧 MotorPoint - Aplicativo web de Repuestos y Accesorios para Autos y Motos
+
 ## 📖 Descripción del Proyecto
 **Descripción General**  
 MotorPoint es una aplicación web diseñada para facilitar el acceso a repuestos y accesorios de **autos y motos**.  
@@ -20,21 +20,6 @@ El sistema considera dos roles principales:
 - Revisión de solicitudes de cotización generadas por los clientes.  
 - Generación de reportes básicos sobre el uso del sistema.
 
----
-## 💻Tecnologías Utilizadas
-- **Backend:**
-  * Spring Boot
-  * Maven:
-     * Spring Web → Para construir APIs REST
-     * Spring Security → Para autenticación y autorización
-     * Spring Data JPA → Para acceso a base de datos con Hibernate
-     * MySQL Driver → Para conectarse a la base de datos MySQL
-     * Validation → Para validar datos de entrada
-     * Spring Boot DevTools → Para recarga automática en desarrollo
-     * Lombok → Para evitar escribir código repetitivo
-- **Frontend:**
-   * React
-   * Bootstrap 
 - **Base de datos:** MySQL  
 - **Seguridad:** Spring Security + JWT (roles y autenticación)  
 - **Estilos:** Bootstrap 
