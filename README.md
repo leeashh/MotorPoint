@@ -1,3 +1,4 @@
+# 🚗🏍️🔧 MotorPoint - Aplicativo web de Repuestos y Accesorios para Autos y Motos
 
 ## 📖 Descripción del Proyecto
 **Descripción General**  
@@ -20,9 +21,23 @@ El sistema considera dos roles principales:
 - Revisión de solicitudes de cotización generadas por los clientes.  
 - Generación de reportes básicos sobre el uso del sistema.
 
+---
+## 💻Tecnologías Utilizadas
+- **Backend:**
+  * Spring Boot
+  * Maven:
+     * Spring Web → Para construir APIs REST
+     * Spring Security → Para autenticación y autorización
+     * Spring Data JPA → Para acceso a base de datos con Hibernate
+     * MySQL Driver → Para conectarse a la base de datos MySQL
+     * Validation → Para validar datos de entrada
+     * Spring Boot DevTools → Para recarga automática en desarrollo
+     * Lombok → Para evitar escribir código repetitivo
+- **Frontend:**
+   * React
+   * Bootstrap 
 - **Base de datos:** MySQL  
-- **Seguridad:** Spring Security + JWT (roles y autenticación)  
-- **Estilos:** Bootstrap 
+- **Seguridad:** Spring Security + JWT (roles y autenticación)   
 - **Control de versiones:** Git + GitHub
 
 ---
@@ -106,13 +121,94 @@ git checkout -b feature/catalogo-productos
 
 #### Ejemplo 
 ```bash
-git checkout -b fix/
+git checkout -b fix/readme-conflict
 ```
+<img width="600" height="58" alt="image" src="https://github.com/user-attachments/assets/c36a26de-89e0-4f0a-a172-1e07fecf60df" />
+
 
 ### **2. Commits**
 - Commits atómicos y descriptivos.
 ```bash
 git commit -m "feat: crear componente Login en React"
-git commit -m "fix: corregir validación de credenciales en formulario de login"
+git commit -m "fix: resolver conflicto en README.md"
 ```
+
+### 3. Uso de comandos Git
+
+Durante el desarrollo del **login** se documentaron los siguientes comandos:
+
+---
+
+🔄 **Restaurar archivos**
+```bash
+git restore src/components/Login.jsx
+```
+📌 Por qué: Cuando se modificó accidentalmente el componente Login.jsx y fue necesario volver al estado previo sin perder el resto de los cambios.
+
+⏪ **Resetear cambios**
+```bash
+git reset --soft HEAD~1
+```
+🔀 **Cambiar de ramas**
+```bash
+git switch develop
+```
+📌 Por qué: Al pasar del desarrollo de la nueva feature login hacia la rama de integración develop.
+
+### 4. Pull Request (PR) / Merge Request (MR)
+
+- Se generó una Pull Request desde **fix/readme-conflict** hacia **main**.
+
+- Descripción clara del cambio.
+
+- Checklist de revisión.
+
+- Revisión y aprobación antes de hacer merge.
+
+<img width="1600" height="688" alt="image" src="https://github.com/user-attachments/assets/fbe2a743-d9b7-48b5-88f4-7ac95d34de71" />
+
+<img width="1286" height="741" alt="image" src="https://github.com/user-attachments/assets/0431419e-71aa-444d-9cae-c37e5433bc51" />
+
+### 5. Resolución de Conflictos Ejemplo:
+
+Al intentar actualizar la rama **main** con los cambios remotos, se generó un conflicto en el archivo:
+
+`README.md`
+
+```diff
+<<<<<<< HEAD
+# MotorPoint - Sistema de Repuestos y Accesorios para Autos y Motos 
+=======
+# 🚗🏍️🔧 MotorPoint - Aplicativo web de Repuestos y Accesorios para Autos y Motos
+>>>>>>> origin/main
+```
+✅ Solución: Se unificaron los cambios y se mantuvo la versión más completa y descriptiva:
+```diff
+# 🚗🏍️🔧 MotorPoint - Aplicativo web de Repuestos y Accesorios para Autos y Motos  
+
+## 📖 Descripción del Proyecto
+**Descripción General**  
+MotorPoint es una aplicación web diseñada para facilitar el acceso a repuestos y accesorios de **autos y motos**.  
+El objetivo principal es ofrecer un catálogo digital de productos, organizado y accesible, que permita a los usuarios encontrar de manera rápida lo que necesitan y a los administradores mantener la información actualizada.  
+
+El sistema considera dos roles principales: **Usuario** y **Administrador** 🚀
+```
+### 6. Historial de commits (puntos de control)
+### Ejemplo de salida:
+```bash
+git log
+```
+### Muestra:
+<img width="1278" height="1013" alt="image" src="https://github.com/user-attachments/assets/37bda904-30ba-4d1e-9e5d-9c09ec98c747" />
+
+<img width="1304" height="953" alt="image" src="https://github.com/user-attachments/assets/e57c23d2-9f6e-44e4-8c8d-eecafdb33e61" />
+
+### 7. Historial de cabeceras
+```bash
+git reflog
+```
+<img width="1570" height="547" alt="image" src="https://github.com/user-attachments/assets/fed76798-5ddb-403a-b6cd-a28ea3dcadc8" />
+
+### 🧩 Estructura de backend
+### 🧩 Estructura del Frontend
 
