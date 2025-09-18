@@ -100,11 +100,11 @@ npm start
 
 ---
 ## 📋 Roles
-| Nombre           | Rol          | Funciones                                              |  
-|------------------|--------------|--------------------------------------------------------|  
-| Ashlee Maldonado | Full Stack   | - Creación de pantallas y componentes reutilizables.<br>- Apoyo en la lógica interna del sistema.<br>- Elaboración de la documentación del proyecto.              | 
-| Angely Corahua   | Full Stack   | - Diseño visual y organización de interfaces.<br>- Manejo de datos mostrados al usuario.<br>- Revisión y validación de formularios.                               |  
-| Bruno Guerra     | Full Stack   | - Desarrollo de reglas y procesos internos del sistema.<br>- Configuración de seguridad y accesos.<br>- Administración del repositorio y despliegue del proyecto. |  
+| *Nombre*          | *Rol*                                     | *Funciones principales* |
+|----------------------|---------------------------------------------|----------------------------|
+| *Ashlee Maldonado* | Full Stack – Líder y Frontend | - Creación de pantallas y componentes.<br>- Apoyo en lógica interna del sistema.<br>- Elaboración y organización de la documentación.<br>- Coordinación del equipo y decisiones.<br>- Testing y validación del sistema. |
+| *Angely Corahua*   | Full Stack  – Frontend e Interfaces | - Diseño y organización de interfaces.<br>- Implementación visual y estilos.<br>- Manejo de datos mostrados al usuario.<br>- Validación de formularios y experiencia de uso.<br>- Testing y pruebas de usabilidad. |
+| *Bruno Guerra*     | Full Stack  – Backend e Infraestructura | - Desarrollo de procesos y reglas internas.<br>- Configuración de seguridad y accesos.<br>- Administración del repositorio y control de versiones.<br>- Despliegue y mantenimiento del sistema.<br>- Testing de calidad y rendimiento. |
 
 ---
 ## 🌱 Flujo de trabajo con Git
@@ -135,29 +135,7 @@ git commit -m "feat: crear página Login en React"
 git commit -m "fix: resolver conflicto en README.md"
 ```
 
-### **3. Uso de comandos Git**
-
-Durante el desarrollo del **login** se documentaron los siguientes comandos:
-
----
-
-🔄 **Restaurar archivos**
-```bash
-git restore src/pages/Login.jsx
-```
-📌 Por qué: Cuando se modificó accidentalmente la página Login.jsx y fue necesario volver al estado previo sin perder el resto de los cambios.
-
-⏪ **Resetear cambios**
-```bash
-git reset --soft HEAD~1
-```
-🔀 **Cambiar de ramas**
-```bash
-git switch develop
-```
-📌 Por qué: Al pasar del desarrollo de la nueva feature login hacia la rama de integración develop.
-
-### **4. Pull Request (PR) / Merge Request (MR)**
+### **3. Pull Request (PR) / Merge Request (MR)**
 
 - Se generó una Pull Request desde **fix/readme-conflict** hacia **main**.
 
@@ -171,7 +149,7 @@ git switch develop
 
 <img width="1286" height="741" alt="image" src="https://github.com/user-attachments/assets/0431419e-71aa-444d-9cae-c37e5433bc51" />
 
-### **5. Resolución de Conflictos Ejemplo:**
+### **4. Resolución de Conflictos Ejemplo:**
 
 Al intentar actualizar la rama **main** con los cambios remotos, se generó un conflicto en el archivo:
 
@@ -195,7 +173,7 @@ El objetivo principal es ofrecer un catálogo digital de productos, organizado y
 
 El sistema considera dos roles principales: **Usuario** y **Administrador** 🚀
 ```
-### **6. Historial de commits (puntos de control)**
+### **5. Historial de commits (puntos de control)**
 ### Ejemplo de salida:
 ```bash
 git log
@@ -205,12 +183,16 @@ git log
 
 <img width="1304" height="953" alt="image" src="https://github.com/user-attachments/assets/e57c23d2-9f6e-44e4-8c8d-eecafdb33e61" />
 
-### **7. Historial de cabeceras**
+### **6. Historial de cabeceras**
 ```bash
 git reflog
 ```
 <img width="1570" height="547" alt="image" src="https://github.com/user-attachments/assets/fed76798-5ddb-403a-b6cd-a28ea3dcadc8" />
 
 ### 🧩 Estructura de backend
+<img width="364" height="667" alt="image" src="https://github.com/user-attachments/assets/b4ca1eb1-6992-4a81-8325-0176e30f8749" />
+
 ### 🧩 Estructura del Frontend
+<img width="359" height="722" alt="image" src="https://github.com/user-attachments/assets/88731c9d-dd78-47d7-82e5-808b78fc5053" />
+
 
